@@ -10,6 +10,6 @@ public class ScoringSystem : MonoBehaviour
 
     void Update()
     {
-        scoreText.GetComponent<Text>().text = "Score Eggs:" + theScore;
+        scoreText.GetComponent<Text>().text = "Collected:" + theScore;
     }
 }
