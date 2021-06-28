@@ -5,13 +5,19 @@ using UnityEngine;
 public class CollectEggGreen2 : MonoBehaviour
 {
    public GameObject Door;
-    public int y=5;
-    public int x=5;
-    public int z=5;
-   void OnTriggerEnter(Collider other) 
+    public float y=5;
+    public float x=5;
+    public float z=5;
+    private bool isCollected = false;
+    void OnTriggerEnter(Collider other) 
     {
-        Door.gameObject.transform.position = new Vector3(x,y,z);
-        ScoringSystem.theScore += 1;
-        Destroy(gameObject);
+        if (!isCollected)
+        {
+            Door.gameObject.transform.position = new Vector3(x, y, z);
+            ScoringSystem.theScore += 1;
+            Debug.Log(gameObject.name + " + 1" + other.name);
+            Destroy(gameObject);
+            isCollected = true;
+        }
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.34197852, g: 0.23011532, b: 0.47685015, a: 1}
+  m_IndirectSpecularColor: {r: 0.3419793, g: 0.23011577, b: 0.47685194, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1925,7 +1925,6 @@ GameObject:
   - component: {fileID: 778786044}
   - component: {fileID: 778786048}
   - component: {fileID: 778786049}
-  - component: {fileID: 778786047}
   m_Layer: 0
   m_Name: Egg red
   m_TagString: Untagged
@@ -1986,29 +1985,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778786043}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.82, y: 0.28, z: 6.5}
+  m_LocalPosition: {x: 0.82, y: 0.28, z: 6.32}
   m_LocalScale: {x: 0.06346244, y: 0.06346244, z: 0.06346244}
   m_Children:
   - {fileID: 1750240481}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &778786047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 778786043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35a42e7ec40524ff28ad0eeb725a4223, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Door: {fileID: 447391488}
-  y: 5
-  x: -3
-  z: 5
 --- !u!65 &778786048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2035,9 +2018,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Door: {fileID: 1498408191}
+  Door2: {fileID: 447391488}
   y: 5
-  x: -3
+  x: -2.89
   z: 9
+  door2x: -2.89
+  door2y: 5
+  door2z: 4.98
 --- !u!1001 &808411356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4367,8 +4354,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Door: {fileID: 1798164735}
   y: 5
-  x: 7
-  z: 7
+  x: 7.0289
+  z: 7.0773
 --- !u!65 &1625053906
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6001,8 +5988,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Door: {fileID: 380695800}
   y: 5
-  x: 6
-  z: 2
+  x: 6.0088
+  z: 1.86
 --- !u!1 &2036342083098688307
 GameObject:
   m_ObjectHideFlags: 0
@@ -6103,7 +6090,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5425705733848528108}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 4.15, y: 0, z: 11.11}
+  m_LocalPosition: {x: 5.54, y: 0, z: 11.66}
   m_LocalScale: {x: 63.727997, y: 40.399864, z: 63.72798}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6429,7 +6416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494537812021399223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.49, y: 0.12, z: 0.41}
+  m_LocalPosition: {x: 5.64, y: 0.12, z: 1.4}
   m_LocalScale: {x: 0.059698824, y: 0.059698824, z: 0.059698824}
   m_Children:
   - {fileID: 834919140}
